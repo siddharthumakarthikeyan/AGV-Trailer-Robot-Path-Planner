@@ -1,0 +1,26 @@
+<?xml version="0.1.0"?>
+
+<!--
+
+MIT License Agreement
+
+Description of the base link for the robot platform.
+
+\authors Siddharth U <siddharthumakarthikeyan@gmail.com>
+
+\maintainer Siddharth U <siddharthumakarthikeyan@gmail.com>
+
+-->
+
+<launch>
+    
+    <node name="robot_nav_teleop" pkg="coppeliasim_ws" type="teleop.py" output="screen" > 
+        <remap from="cmd_vel" to="/robot/twist" />
+        <param name="speed" value="1.0" />
+        <param name="turn" value="1.5" />
+        <param name="repeat_rate" value="0.0" />
+        <param name="key_timeout" value="0.0" />
+    </node>
+
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find coppeliasim_ws)/rviz/rviz.rviz" />
+</launch>

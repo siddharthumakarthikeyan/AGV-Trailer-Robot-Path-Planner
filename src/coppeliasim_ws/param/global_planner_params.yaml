@@ -1,0 +1,8 @@
+GlobalPlanner:
+    use_dijkstra: true
+    use_quadratic: true
+    # neutral_cost: 1
+    allow_unknown: true
+    # visualize_potential: true
+    # cost_factor: 66
+    # use_grid_path: false
