@@ -14,7 +14,7 @@ Autonomous Path Planning of Trailer based AGV with obstacle avoidance
 - ```sudo apt-get install ros-noetic-teleop-twist-keyboard```
 - ```sudo apt-get install ros-noetic-sbpl```
 - ```sudo apt-get install ros-noetic-teb-local-planner```
-
+- ```sudo apt-get install ros-noetic-global-planner```
 
 ### steps to runs 
 *note* Run the scripts in the following sequence
